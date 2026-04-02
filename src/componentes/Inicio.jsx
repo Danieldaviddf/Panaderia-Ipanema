@@ -41,7 +41,7 @@ export const Inicio = () => {
         </nav>
 
         {/* contenido central */}
-        <div className="text-white relative z-10 flex items-center justify-center text-center min-h-[620px] px-6">
+        <div className="text-white relative z-10 flex p-15 justify-center text-center min-h-[620px] px-6">
           <div className="text-white max-w-3xl text-center bg-black/30">
             <h2 className="!text-white text-xs mb-3 tracking-widest uppercase">
               Panadería en Revenga, Segovia // Ipanema
@@ -57,9 +57,6 @@ export const Inicio = () => {
               Encargue nuestras tartas personalizadas.
             </p>
 
-            <button className="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-sm transition">
-              See our menu
-            </button>
           </div>
         </div>
       </div>
