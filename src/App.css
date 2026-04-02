@@ -3,3 +3,8 @@ body {
 background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 
+.imgLogo{
+  width: 200px;
+  padding-top: 26px;
+  padding-right: 5px;
+}

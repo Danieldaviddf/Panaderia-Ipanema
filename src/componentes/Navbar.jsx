@@ -1,7 +1,7 @@
 import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import logo from '../assets/logo.png'
 const navigation = [
   { name: 'Inicio', href: '#', current: true },
   { name: 'Historia', href: '#', current: false },
@@ -45,12 +45,12 @@ export const Navbar = () => {
               </div>
 
               {/* Logo Central */}
-              <div className="flex shrink-0 items-center px-4">
-                <img
-                  alt="Ipanema Logo"
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  className="h-10 w-auto"
-                />
+          <div className="flex w-full items-center justify-center">
+        <img
+  alt="Ipanema Logo"
+  src={logo}
+  className="imgLogo h-18 w-auto bg-white/40 px-3 py-2 rounded-md"
+/>
               </div>
 
               {/* Enlaces Derecha */}
@@ -67,7 +67,7 @@ export const Navbar = () => {
             <div className="flex sm:hidden shrink-0 items-center">
               <img
                 alt="Ipanema Logo"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                src={logo}
                 className="h-8 w-auto"
               />
             </div>
