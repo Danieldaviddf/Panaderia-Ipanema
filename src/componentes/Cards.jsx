@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Cards = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="max-w-6xl mx-auto px-4 py-12 gap-5">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
     
     {/* Card 1 - Bread */}
     <div className="flex flex-col">
