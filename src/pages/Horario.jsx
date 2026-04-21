@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Horario = () => {
   return (
-      <div className="flex items-center justify-center min-h-screen px-4 py-12">
+      <div className="flex items-center justify-center px-4 py-8">
         <div className="w-full max-w-md overflow-hidden bg-white shadow-2xl rounded-3xl">
           {/* Encabezado: Tono café oscuro / rústico */}
           <div className="bg-[#3d2b1f] p-8 text-center text-white">
