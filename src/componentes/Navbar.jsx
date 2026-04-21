@@ -2,11 +2,16 @@ import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
+import { AppRoutes } from '../Routes/AppRoutes';
+
+
+
 const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Historia', href: '#', current: false },
-  { name: 'Horario', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'Inicio', href: '/', current: true },
+  { name: 'Historia', href: "/Historia", current: false },
+  { name: 'Horario', href: "/Horario", current: false },
+  { name: 'Contacto', href: "/Contacto", current: false },
 ]
 
 function classNames(...classes) {
@@ -38,9 +43,9 @@ export const Navbar = () => {
               {/* Enlaces Izquierda */}
               <div className="flex space-x-6">
                 {leftLinks.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-300 hover:text-white text-sm font-medium">
+                  <Link key={item.name} to={item.href} className="text-gray-300 hover:text-white text-sm font-medium">
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
 
@@ -56,9 +61,9 @@ export const Navbar = () => {
               {/* Enlaces Derecha */}
               <div className="flex space-x-6">
                 {rightLinks.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-300 hover:text-white text-sm font-medium">
+                  <Link key={item.name} to={item.href} className="text-gray-300 hover:text-white text-sm font-medium">
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -82,8 +87,8 @@ export const Navbar = () => {
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
-              as="a"
-              href={item.href}
+              as={Link}
+              to={item.href}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
             >
               {item.name}
