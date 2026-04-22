@@ -43,7 +43,7 @@ export const Navbar = () => {
               {/* Enlaces Izquierda */}
               <div className="flex space-x-6">
                 {leftLinks.map((item) => (
-                  <Link key={item.name} to={item.href} className="text-gray-300 hover:text-white text-sm font-medium">
+                  <Link key={item.name} to={item.href} className="text-gray-300 hover:text-white text-xl font-medium">
                     {item.name}
                   </Link>
                 ))}
@@ -61,7 +61,7 @@ export const Navbar = () => {
               {/* Enlaces Derecha */}
               <div className="flex space-x-6">
                 {rightLinks.map((item) => (
-                  <Link key={item.name} to={item.href} className="text-gray-300 hover:text-white text-sm font-medium">
+                  <Link key={item.name} to={item.href} className="text-gray-300 hover:text-white text-xl font-medium">
                     {item.name}
                   </Link>
                 ))}

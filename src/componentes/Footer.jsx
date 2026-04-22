@@ -19,13 +19,13 @@ export const Footer = () => {
         {/* Redes Sociales */}
         <div className="flex items-center gap-6">
           <a href="#" className="hover:text-orange-300 transition-transform hover:scale-125">
-            <FaInstagram size={22} />
+            <FaInstagram size={40} />
           </a>
           <a href="#" className="hover:text-orange-300 transition-transform hover:scale-125">
-            <FaFacebook size={22} />
+            <FaFacebook size={40} />
           </a>
           <a href="#" className="hover:text-orange-300 transition-transform hover:scale-125">
-            <FaWhatsapp size={22} />
+            <FaWhatsapp size={40} />
           </a>
         </div>
 
