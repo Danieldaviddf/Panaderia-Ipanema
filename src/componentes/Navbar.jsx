@@ -10,8 +10,8 @@ import { AppRoutes } from '../Routes/AppRoutes';
 const navigation = [
   { name: 'Inicio', href: '/', current: true },
   { name: 'Historia', href: "/Historia", current: false },
-  { name: 'Horario', href: "/Horario", current: false },
   { name: 'Contacto', href: "/Contacto", current: false },
+  { name: 'Horario', href: "/Horario", current: false },
 ]
 
 function classNames(...classes) {
